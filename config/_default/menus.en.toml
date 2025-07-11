@@ -1,0 +1,125 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Learn & Grow"
+hasChildren = true
+weight = 2
+
+[[main]]
+name = "Talent Showcase"
+url = "https://academy.programmify.org/talent-pool"
+weight = 3
+
+[[main]]
+name = "Insights"
+url = "blog/"
+weight = 4
+
+[[main]]
+name = "Get in Touch"
+url = "contact/"
+weight = 5
+
+# Sub menu for lean and grow
+[[main]]
+parent = "Learn & Grow"
+name = "Training Program"
+url = "https://academy.programmify.org/training"
+
+[[main]]
+parent = "Learn & Grow"
+name = "Internship Program"
+url = "/pip-internship/"
+
+
+
+# Sub menu
+# [[main]]
+# parent = "Product"
+# name = "Academy Coming Soon"
+# url = "#"
+
+# [[main]]
+# parent = "Product"
+# name = "Showcase Coming Soon"
+# url = "#"
+
+# Sub menu For Pages
+# [[main]]
+# parent = "Pages"
+# name = "Blog"
+# url = "blog/"
+
+# [[main]]
+# parent = "Pages"
+# name = "Contact"
+# url = "contact/"
+
+# [[main]]
+# parent = "Pages"
+# name = "Authors"
+# url = "authors/"
+
+# [[main]]
+# parent = "Pages"
+# name = "Categories"
+# url = "categories/"
+
+# [[main]]
+# parent = "Pages"
+# name = "404 Page"
+# url = "404/"
+
+# [[main]]
+# parent = "Pages"
+# name = "Elements"
+# url = "elements/"
+
+# [[main]]
+# name = "Team"
+# url = "authors/"
+# weight = 4
+
+
+# footer menu
+[[footer]]
+name = "About Us"
+url = "about/"
+weight = 1
+
+[[footer]]
+name = "Academy"
+url = "https://academy.programmify.org"
+weight = 2
+
+[[footer]]
+name = "Certificate Verification"
+url = "https://academy.programmify.org/certificate/verify"
+weight = 3
+
+[[footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 4
+
+[[footer]]
+name = "Terms of Service"
+url = "terms/"
+weight = 5
+
+[[footer]]
+name = "Join Our Team"
+url = "careers/"
+weight = 6
+
+[[footer]]
+name = "Community Guidelines"
+url = "conduct/"
+weight = 7
+
