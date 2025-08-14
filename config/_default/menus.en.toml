@@ -35,7 +35,7 @@ url = "https://academy.programmify.org/training"
 [[main]]
 parent = "Learn & Grow"
 name = "Internship Program"
-url = "/pip-internship/"
+url = "https://academy.programmify.org/internship"
 
 
 

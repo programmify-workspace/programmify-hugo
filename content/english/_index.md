@@ -6,7 +6,7 @@ banner:
   image: "/images/anime.png"
   button:
     enable: true
-    label: "Enroll for Bootcamp 2025"
+    label: "Apply for PIP4 Internship"
     link: "https://academy.programmify.org/training"
 
 # Features
