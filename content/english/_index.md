@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Apply for PIP4 Internship"
-    link: "https://academy.programmify.org/training"
+    link: "https://academy.programmify.org/internship"
 
 # Features
 features:
