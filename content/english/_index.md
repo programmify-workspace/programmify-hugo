@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "EMPOWER YOUR CREATIVITY, UNLEASH YOUR POTENTIAL"
-  content: "Overcoming the ~~Fear~~ of Coding Unlocks Limitless Tech Creativity. Let's Conquer it Together! 🛠️✨"
+  title: "EMPOWER YOUR CREATIVITY. BUILD WHAT MATTERS"
+  content: "From your first line of code to launching real products, Programmify helps you learn, build and grow with the world"
   image: "/images/anime.png"
   button:
     enable: true
@@ -11,30 +11,67 @@ banner:
 
 # Features
 features:
-  - title: "Academy: Shaping Africa’s Next Generation of Tech Leaders"
+  - title: "Programmify Academy"
     image: "/images/anime-3.png"
-    content: "Our Academy offers a 12-week Bootcamp designed for beginners eager to launch their careers in tech, followed by an intensive 4-month PIP (Programmify Internship Program) for tech talents ready to apply and refine their skills in real-world projects."
+    content: "<strong>Start • Learn • Grow </strong> <br />  Practical, mentor-led training for aspiring developers, designers and product thinkers. Hands-on, flexible, community-driven."
     bulletpoints:
-      - "<strong>Comprehensive Tech Education:</strong> Learn and grow in-demand tech skills with our immersive Bootcamp and Internship programs, strategically designed to accelerate your career growth."
-      - "<strong>Certifications and Career Boost:</strong> Earn verifiable and recognized certifications, receive a personalized recommendation letter, and gain access to exclusive job opportunities and career guidance."
-      - "<strong>Personalized Support:</strong> Benefit from one-on-one mentorship, AI-powered learning tools, and flexible online classes that empower you to learn at your own pace without missing any classes."
-      - "<strong>Launch Your Career:</strong> Join our exclusive talent pool, connecting you with employers and career opportunities to kickstart your tech career."
-      - "<strong>Exclusive Benefits:</strong> Unlock special offers such as discounted laptops, internet data packages, scholarship opportunities, and more to support your educational and career goals."
+      - "Beginner friendly bootcamps"
+      - "AI-powered learning tools"
+      - "Personalized mentorship"
+      - "Career guidance and veriable certification"
     button:
       enable: true
       label: "Learn More"
       link: "https://academy.programmify.org/"
+      
 
-  - title: "Showcase: Share Your Tech Achievements"
+  - title: "Programmify Internship"
     image: "/images/anime-1.png"
-    content: "Step into the global spotlight and showcase your tech talents! Share your projects, skills, and achievements with a worldwide audience and get the recognition you deserve."
+    content: "<strong>Build • Ship • Get Seen</strong> <br /> Our flagship 60-day Builder Lab. You'll work in squads, build real products using AI and open-source tools, write devlogs and pitch your work in public."
     bulletpoints:
-      - "<strong>Gain Global Recognition</strong>: Showcase your projects and skills to a community of techies like you."
-      - "<strong>Earn Your Due</strong>: Get recognized for your hard work, dedication, and improvement"
-      - "<strong>Connect and Collaborate</strong>: Join a vibrant community of developers from around the world"
-      - "<strong>Unlock Your Potential</strong>: Empower yourself with Programmify's resources, support, and opportunities"
+      - "5 themed team projects"
+      - "24-hour solo build challenge"
+      - "Public demos & devlog"
+      - "AI Tools: Cursor, OpenAI, Lovable"
+      - "Infra & Backend: Supabase, Firebase, Railway"
+      - "Open Source & Community: Hugging Face, Polar, GitHub, Resend"
+      - "Dev Experience: Vercel, Postman, Langchain, Replicate, and more"
+      - "Public launch platforms: Product Hunt, Peerlist, Hacker News, and more"
     button:
       enable: true
-      label: "Waitlist Me"
-      link: "#"
+      label: "Apply to PIP4"
+      link: "https://academy.programmify.org/internship"
+
+# Ecosystem
+ecosystem:
+  title: "Coming Next"
+  subtitle: "Building the future of developer communities"
+  items:
+    - title: "Programmify Labs"
+      content: "An experimental playground for builders to collaborate on open-source and AI-powered ideas that solve real problems."
+      button:
+        enable: true
+        label: "Join Waitlist"
+        link: "#"
+        
+    - title: "DevPassport"
+      content: "A verified builder identity and living portfolio that gives you credibility, visibility and access to global opportunities."
+      button:
+        enable: true
+        label: "Join Waitlist"
+        link: "#"
+        
+    - title: "Hall of Fame"
+      content: "A public archive celebrating the most impactful Programmify builders and projects forever."
+      button:
+        enable: true
+        label: "Join Waitlist"
+        link: "#"
+        
+    - title: "Accelerator for Underprivileged Builders"
+      content: "A dedicated support program providing mentorship, tools and opportunities for talented builders from underserved backgrounds."
+      button:
+        enable: true
+        label: "Join Waitlist"
+        link: "#"
 ---

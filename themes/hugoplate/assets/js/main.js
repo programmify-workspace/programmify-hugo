@@ -47,7 +47,26 @@ const closeBtn = document.getElementsByClassName("close")[0];
 const form = document.getElementById("waitlistForm");
 
 // When the user clicks the button, open the modal
-function openModal() {
+function openModal(initiative = '') {
+  console.log('openModal called with initiative:', initiative);
+  
+  // Update modal content based on initiative
+  const modalTitle = document.getElementById('modalTitle');
+  const modalSubtitle = document.getElementById('modalSubtitle');
+  const initiativeField = document.getElementById('initiative');
+  
+  if (initiative && initiative.trim() !== '') {
+    modalTitle.textContent = `Join ${initiative} Waitlist`;
+    modalSubtitle.textContent = `Be the first to know when ${initiative} launches`;
+    initiativeField.value = initiative;
+    console.log('Modal updated for initiative:', initiative);
+  } else {
+    modalTitle.textContent = 'Join the Waitlist';
+    modalSubtitle.textContent = 'Be the first to know when we launch';
+    initiativeField.value = '';
+    console.log('Modal updated for general waitlist');
+  }
+  
   modal.style.display = "block";
 }
 
@@ -74,6 +93,7 @@ form.addEventListener('submit', function(event) {
   const formData = new FormData(formInput);
 
   const emailInput = formData.get('email');
+  const initiativeInput = formData.get('initiative');
   const email = emailInput.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -82,6 +102,14 @@ form.addEventListener('submit', function(event) {
     emailSuccess.classList.add('hidden')
   } else {
     emailError.classList.add('hidden');
+    
+    // Log form data for debugging
+    console.log('Form submission:', {
+      email: email,
+      initiative: initiativeInput,
+      timestamp: new Date().toISOString()
+    });
+    
     // Perform action when email is valid (e.g., submit form)
     fetch("/", {
       method: "POST",
@@ -93,9 +121,15 @@ form.addEventListener('submit', function(event) {
           throw new Error("Email was not sent!");
         }
         emailSuccess.classList.remove('hidden');
-        clearEmailValue()
+        clearEmailValue();
+        
+        // Log successful submission
+        console.log('Form submitted successfully for:', initiativeInput || 'general waitlist');
     })
-      .catch((error) => alert(error.message));
+      .catch((error) => {
+        console.error('Form submission error:', error);
+        alert(error.message);
+      });
       // modal.style.display = "none";
   }
 });
