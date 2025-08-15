@@ -32,11 +32,8 @@ features:
       - "5 themed team projects"
       - "24-hour solo build challenge"
       - "Public demos & devlog"
-      - "AI Tools: Cursor, OpenAI, Lovable"
-      - "Infra & Backend: Supabase, Firebase, Railway"
-      - "Open Source & Community: Hugging Face, Polar, GitHub, Resend"
-      - "Dev Experience: Vercel, Postman, Langchain, Replicate, and more"
-      - "Public launch platforms: Product Hunt, Peerlist, Hacker News, and more"
+      - "Build with modern AI and open-source tools"
+      - "Launch on public platforms like Product Hunt, Hacker News & more"
     button:
       enable: true
       label: "Apply to PIP4"
