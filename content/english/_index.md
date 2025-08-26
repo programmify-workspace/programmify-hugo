@@ -65,8 +65,8 @@ ecosystem:
         label: "Join Waitlist"
         link: "#"
         
-    - title: "Accelerator for Underprivileged Builders"
-      content: "A dedicated support program providing mentorship, tools and opportunities for talented builders from underserved backgrounds."
+    - title: "Builders from Emerging Communities"
+      content: "A dedicated support program providing mentorship, tools and opportunities for talented builders from emerging communities and underrepresented backgrounds."
       button:
         enable: true
         label: "Join Waitlist"

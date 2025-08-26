@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/english/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog/single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Categories", name: "categories", widget: "list", required: false}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "authors"
+    label: "Authors"
+    folder: "content/english/authors"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "authors/single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Bio", name: "bio", widget: "text"}
+      - {label: "Email", name: "email", widget: "string", required: false}
+      - {label: "Social Links", name: "social", widget: "object", fields: [
+          {label: "Twitter", name: "twitter", widget: "string", required: false},
+          {label: "LinkedIn", name: "linkedin", widget: "string", required: false},
+          {label: "GitHub", name: "github", widget: "string", required: false}
+        ]}
+
+  - name: "careers"
+    label: "Career Opportunities"
+    folder: "content/english/careers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "careers/single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["Full-time", "Part-time", "Internship", "Contract"]}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Requirements", name: "requirements", widget: "list"}
+      - {label: "Benefits", name: "benefits", widget: "list", required: false}
+      - {label: "Apply Link", name: "apply_link", widget: "string", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "content/english/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
